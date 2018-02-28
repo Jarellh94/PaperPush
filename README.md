@@ -13,17 +13,21 @@ The papers are instantiated and move to the bottom of the stack. This will actua
 Papers move from the stack to their proper stack.
 
 Programming:
+
 Paper class?
  - Target Stack/variable for value
  - Instantiates a stamp somewhere on the paper
+ 
 Main Stack Class - Goes on mainStackManager
  - Holds a queue of all the papers
  - Add to queue
  - Remove from Queue
   - Returns the paper
   - Activates the next paper
+  
 PaperSpawner - Goes one mainStackManager
  - Instantiates a paper object
+ 
 PlayerManager
  - Score
  - Number of mistakes
@@ -31,5 +35,6 @@ PlayerManager
   - Applies actions to 
  - Handle Losing
   - Shows gameover gui
+  
 GameOverGui
  - Allows player to play again
