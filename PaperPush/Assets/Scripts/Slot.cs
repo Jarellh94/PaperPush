@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Slot : MonoBehaviour {
+public enum SlotSide{RIGHT, LEFT};
 
-    public bool right = false;
+public class Slot : MonoBehaviour {
+    
+    public SlotSide mySide;
 
     PaperSpawner spawner;
+    ScoreManager scoreMan;
 
 	// Use this for initialization
 	void Start () {
         spawner = FindObjectOfType<PaperSpawner>();
+        scoreMan = FindObjectOfType<ScoreManager>();
 	}
 	
 	// Update is called once per frame
@@ -22,11 +26,18 @@ public class Slot : MonoBehaviour {
     {
         if (other.CompareTag("Paper"))
         {
-            string loc = right ? "Right" : "Left";
+            if(other.gameObject.GetComponent<PaperInfo>().GetTarget() == mySide)
+            {
+                scoreMan.AddScore(1);
+                spawner.NewPaper();
+            }
+            else
+            {
+                Debug.Log("Mistake!");
+            }
+            
 
-            spawner.NewPaper();
             Destroy(other.gameObject);
-            Debug.Log(loc + " Got It");
         }
     }
 }
