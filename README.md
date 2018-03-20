@@ -41,6 +41,6 @@ GameOverGui
  - Allows player to play again
  
  Tasks to do:
--[x] Fix the papers dropping too far into the stack collider. Probably need to change this to be stopped by y value, not by collision.
--[ ] Add a main menu
--[ ] Add a lose menu that allows the player to flip through the cards.
+- [x] Fix the papers dropping too far into the stack collider. Probably need to change this to be stopped by y value, not by collision.
+- [ ] Add a main menu
+- [ ] Add a lose menu that allows the player to flip through the cards.
