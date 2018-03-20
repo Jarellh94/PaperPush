@@ -229,9 +229,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adcd5a13e7a7840448fbc46fad6e91cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paperPrefab: {fileID: 1339815428119522, guid: c8ea0ab763abaa84b8f96b76b5877bed,
+  paperPrefab: {fileID: 1152403172134758, guid: 11f8f29fece813343a97a64b505a5446,
     type: 2}
   paperSpawnPoint: {fileID: 933633617}
+  scriptures:
+  - verse: John 3:16
+    text: For God so loved the wolrd that He gave His only begotten Son, that whoever
+      believes in Him should not perish but have everlasting life.
+    isAccurate: 1
+  - verse: Xavier 2:99
+    text: The trees know not where their roots grow, only that water is recieved,
+      and in water life.
+    isAccurate: 0
+  - verse: Genesis 1:1
+    text: In the beginning God created the heavens and the earth.
+    isAccurate: 1
+  - verse: Proverbs 3:3
+    text: Let not mercy and truth forsake you; Bind them around your neck, write them
+      on the tablet of your heart,
+    isAccurate: 1
+  - verse: Ecclesiastes 7:1
+    text: A good name is better than precious ointment, and the day of death than
+      the day of on's birth
+    isAccurate: 1
 --- !u!114 &505058421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,6 +264,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 789305056}
+--- !u!1001 &673551910
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4116459260105726, guid: 11f8f29fece813343a97a64b505a5446, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116459260105726, guid: 11f8f29fece813343a97a64b505a5446, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116459260105726, guid: 11f8f29fece813343a97a64b505a5446, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116459260105726, guid: 11f8f29fece813343a97a64b505a5446, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116459260105726, guid: 11f8f29fece813343a97a64b505a5446, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116459260105726, guid: 11f8f29fece813343a97a64b505a5446, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116459260105726, guid: 11f8f29fece813343a97a64b505a5446, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116459260105726, guid: 11f8f29fece813343a97a64b505a5446, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 11f8f29fece813343a97a64b505a5446, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &682550413
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,7 +385,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 682550413}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.64, y: 0, z: 0}
+  m_LocalPosition: {x: 6.77, y: 0, z: 4.31}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -431,7 +493,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 749871286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.62}
+  m_LocalPosition: {x: 0, y: 0, z: -1.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -589,7 +651,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 933633613}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 8.67}
+  m_LocalPosition: {x: 0, y: 0, z: 17.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -767,54 +829,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031232618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.86, y: 0, z: 0}
+  m_LocalPosition: {x: -7.15, y: 0, z: 4.31}
   m_LocalScale: {x: 2, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1267195186
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4839691948016096, guid: c8ea0ab763abaa84b8f96b76b5877bed, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839691948016096, guid: c8ea0ab763abaa84b8f96b76b5877bed, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839691948016096, guid: c8ea0ab763abaa84b8f96b76b5877bed, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839691948016096, guid: c8ea0ab763abaa84b8f96b76b5877bed, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839691948016096, guid: c8ea0ab763abaa84b8f96b76b5877bed, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839691948016096, guid: c8ea0ab763abaa84b8f96b76b5877bed, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839691948016096, guid: c8ea0ab763abaa84b8f96b76b5877bed, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4839691948016096, guid: c8ea0ab763abaa84b8f96b76b5877bed, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c8ea0ab763abaa84b8f96b76b5877bed, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1854767147
 GameObject:
   m_ObjectHideFlags: 0

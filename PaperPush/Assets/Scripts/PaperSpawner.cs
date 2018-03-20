@@ -7,6 +7,8 @@ public class PaperSpawner : MonoBehaviour {
     public GameObject paperPrefab;
     public Transform paperSpawnPoint;
 
+    public List<Scripture> scriptures;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -19,6 +21,19 @@ public class PaperSpawner : MonoBehaviour {
 
     public void NewPaper()
     {
-        Instantiate(paperPrefab, paperSpawnPoint.position, Quaternion.identity);
+        GameObject newPaper = Instantiate(paperPrefab, paperSpawnPoint.position, Quaternion.identity) as GameObject;
+
+        int ran = Random.Range(0, scriptures.Count);
+
+        newPaper.GetComponent<PaperInfo>().SetScripture(scriptures[ran]);
     }
+}
+
+[System.Serializable]
+public class Scripture
+{
+    public string verse;
+    public string text;
+
+    public bool isAccurate;
 }

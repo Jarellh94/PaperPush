@@ -5,6 +5,7 @@ using UnityEngine;
 public class PaperMovement : MonoBehaviour {
 
     public float moveSpeed = 5;
+    public float stopPoint = 3;
 
     bool spawning = true;
     bool moving = false;
@@ -24,6 +25,9 @@ public class PaperMovement : MonoBehaviour {
 		else if(moving)
         {
             transform.Translate(Vector3.right * moveDir * moveSpeed * Time.deltaTime);
+
+            if (transform.position.z <= stopPoint)
+                Stop();
         }
 	}
 
