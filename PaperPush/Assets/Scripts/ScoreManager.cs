@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour {
 
     public Text scoreText;
+    public Text endScoreText;
 
     int score = 0;
 
@@ -25,5 +26,12 @@ public class ScoreManager : MonoBehaviour {
     public void UpdateScore()
     {
         scoreText.text = score.ToString();
+        endScoreText.text = "Your Score: " + score.ToString();
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
+        UpdateScore();
     }
 }

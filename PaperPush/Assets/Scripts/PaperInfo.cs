@@ -56,4 +56,9 @@ public class PaperInfo : MonoBehaviour {
     {
         return target;
     }
+
+    public void GameEnded()
+    {
+        verseSourceText.gameObject.SetActive(true);
+    }
 }

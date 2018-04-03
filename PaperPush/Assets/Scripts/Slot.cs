@@ -34,6 +34,8 @@ public class Slot : MonoBehaviour {
             else
             {
                 Debug.Log("Mistake!");
+
+                spawner.EndGame();
             }
             
 

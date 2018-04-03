@@ -10,6 +10,7 @@ public class PaperMovement : MonoBehaviour {
     bool spawning = true;
     bool moving = false;
     int moveDir = 0;
+    bool gameOver = false;
 
 	// Use this for initialization
 	void Start () {
@@ -21,18 +22,18 @@ public class PaperMovement : MonoBehaviour {
         if (spawning)
         {
             transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
-        }
-		else if(moving)
-        {
-            transform.Translate(Vector3.right * moveDir * moveSpeed * Time.deltaTime);
-
             if (transform.position.z <= stopPoint)
                 Stop();
+        }
+		else if(moving && !gameOver)
+        {
+            transform.Translate(Vector3.right * moveDir * moveSpeed * Time.deltaTime);
         }
 	}
 
     public void Stop()
     {
+        transform.position.Set(transform.position.x, transform.position.y, stopPoint);
         spawning = false;
         moving = false;
     }
@@ -47,5 +48,10 @@ public class PaperMovement : MonoBehaviour {
     {
         moving = true;
         moveDir = 1;
+    }
+
+    public void GameEnded()
+    {
+        gameOver = true;
     }
 }
