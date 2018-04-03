@@ -42,5 +42,6 @@ GameOverGui
  
  Tasks to do:
 - [x] Fix the papers dropping too far into the stack collider. Probably need to change this to be stopped by y value, not by collision.
-- [ ] Add a main menu
-- [ ] Add a lose menu that allows the player to flip through the cards.
+- [x] Add a main menu
+- [x] Add a lose menu that allows the player to flip through the cards. (Kind of. Currently it's go until you lose.)
+- [ ] Create a mode where you play a timed session and it keeps track of what you got wrong.
