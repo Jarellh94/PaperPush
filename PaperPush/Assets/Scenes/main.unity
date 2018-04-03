@@ -697,14 +697,14 @@ MonoBehaviour:
   paperSpawnPoint: {fileID: 933633617}
   endGamePanel: {fileID: 1522512351}
   gamePanel: {fileID: 1233613458}
-  scriptures:
+  easyScriptures:
   - verse: John 3:16
-    text: For God so loved the wolrd that He gave His only begotten Son, that whoever
+    text: For God so loved the world that He gave His only begotten Son, that whoever
       believes in Him should not perish but have everlasting life.
     isAccurate: 1
-  - verse: Xavier 2:99
-    text: The trees know not where their roots grow, only that water is recieved,
-      and in water life.
+  - verse: Mitch 100:2
+    text: Those who are unwilling to share with their neighbor, will have their possessions
+      taken from them by force.
     isAccurate: 0
   - verse: Genesis 1:1
     text: In the beginning God created the heavens and the earth.
@@ -713,13 +713,69 @@ MonoBehaviour:
     text: Let not mercy and truth forsake you; Bind them around your neck, write them
       on the tablet of your heart,
     isAccurate: 1
+  - verse: Jason 29:29
+    text: The Lord God wants you to be happy and have everything you want.
+    isAccurate: 0
+  - verse: Harold 1:1
+    text: In the beginning, God wanted a planet for His people to live on.
+    isAccurate: 0
+  - verse: Matthew 5:3
+    text: Blessed are the poor in spirit, for theirs is the kingdom of heaven.
+    isAccurate: 1
+  - verse: Complaints 17:3
+    text: And Jesus replied, "Those who lie to me, will not be my friends when I return."
+    isAccurate: 0
+  - verse: Xavier 8:34
+    text: If someone knocks on your door, without the secret knock, do not let them
+      in.
+    isAccurate: 0
+  - verse: John 11:35
+    text: Jesus wept
+    isAccurate: 1
+  - verse: Psalm 23:1
+    text: The LORD is my shepherd; I shall not want.
+    isAccurate: 1
+  - verse: Trinity 16:10
+    text: The LORD helps those who help themselves.
+    isAccurate: 0
+  - verse: Psalm 23:4
+    text: Yea, though I walk through the valley of the shadow of death, I will fear
+      no evil;
+    isAccurate: 1
+  - verse: Proverbs 3:5
+    text: Trust in the LORD with all your heart, and lean not on your own understanding;
+    isAccurate: 1
+  - verse: 1 Corinthians 13:4
+    text: Love suffers long and is kind; love does not envy; love does not parade
+      itself, is not puffed up;
+    isAccurate: 1
+  - verse: 1 Corinthians 13:13
+    text: And now abide faith, hope, love, thse three; but the greatest of these is
+      love.
+    isAccurate: 1
+  - verse: Phillipians 4:13
+    text: I can do all things through Christ who strengthens me.
+    isAccurate: 1
+  - verse: Marcus 2:20
+    text: The LORD is a lighthouse, leading the boats of our souls to the shore.
+    isAccurate: 0
+  - verse: Jessica 77:77
+    text: Then Jesus laid down and took a nap, for he was exhausted.
+    isAccurate: 0
+  - verse: Psalm 34:1
+    text: 'I will bless the LORD at all times: his praise shall continually be in
+      my mouth.'
+    isAccurate: 1
+  mediumScriptures:
+  - verse: Xavier 2:99
+    text: The trees know not where their roots grow, only that water is recieved,
+      and in water life.
+    isAccurate: 0
+  hardScriptures:
   - verse: Ecclesiastes 7:1
     text: A good name is better than precious ointment, and the day of death than
       the day of on's birth
     isAccurate: 1
-  easyScriptures: []
-  mediumScriptures: []
-  hardScriptures: []
 --- !u!114 &505058421
 MonoBehaviour:
   m_ObjectHideFlags: 0

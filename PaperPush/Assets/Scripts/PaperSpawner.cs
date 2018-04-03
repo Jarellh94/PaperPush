@@ -9,8 +9,7 @@ public class PaperSpawner : MonoBehaviour {
 
     public GameObject endGamePanel;
     public GameObject gamePanel;
-
-    public List<Scripture> scriptures;
+    
     public List<Scripture> easyScriptures;
     public List<Scripture> mediumScriptures;
     public List<Scripture> hardScriptures;
@@ -88,7 +87,7 @@ public class PaperSpawner : MonoBehaviour {
         switch(difficulty)
         {
             case 1:
-                currentScriptures.AddRange(scriptures);
+                currentScriptures.AddRange(easyScriptures);
                 break;
             case 2:
                 currentScriptures.AddRange(mediumScriptures);
