@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DifficultySetting : MonoBehaviour {
 
-    int difficulty = 1;
+    public int difficulty = 2;
 
 	// Use this for initialization
 	void Start () {

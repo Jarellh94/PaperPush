@@ -109,7 +109,7 @@ public class PaperSpawner : MonoBehaviour {
         }
     }
 }
-
+/*
 [System.Serializable]
 public class Scripture
 {
@@ -117,4 +117,4 @@ public class Scripture
     public string text;
 
     public bool isAccurate;
-}
+}*/

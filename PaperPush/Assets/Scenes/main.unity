@@ -698,84 +698,30 @@ MonoBehaviour:
   endGamePanel: {fileID: 1522512351}
   gamePanel: {fileID: 1233613458}
   easyScriptures:
-  - verse: John 3:16
-    text: For God so loved the world that He gave His only begotten Son, that whoever
-      believes in Him should not perish but have everlasting life.
-    isAccurate: 1
-  - verse: Mitch 100:2
-    text: Those who are unwilling to share with their neighbor, will have their possessions
-      taken from them by force.
-    isAccurate: 0
-  - verse: Genesis 1:1
-    text: In the beginning God created the heavens and the earth.
-    isAccurate: 1
-  - verse: Proverbs 3:3
-    text: Let not mercy and truth forsake you; Bind them around your neck, write them
-      on the tablet of your heart,
-    isAccurate: 1
-  - verse: Jason 29:29
-    text: The Lord God wants you to be happy and have everything you want.
-    isAccurate: 0
-  - verse: Harold 1:1
-    text: In the beginning, God wanted a planet for His people to live on.
-    isAccurate: 0
-  - verse: Matthew 5:3
-    text: Blessed are the poor in spirit, for theirs is the kingdom of heaven.
-    isAccurate: 1
-  - verse: Complaints 17:3
-    text: And Jesus replied, "Those who lie to me, will not be my friends when I return."
-    isAccurate: 0
-  - verse: Xavier 8:34
-    text: If someone knocks on your door, without the secret knock, do not let them
-      in.
-    isAccurate: 0
-  - verse: John 11:35
-    text: Jesus wept
-    isAccurate: 1
-  - verse: Psalm 23:1
-    text: The LORD is my shepherd; I shall not want.
-    isAccurate: 1
-  - verse: Trinity 16:10
-    text: The LORD helps those who help themselves.
-    isAccurate: 0
-  - verse: Psalm 23:4
-    text: Yea, though I walk through the valley of the shadow of death, I will fear
-      no evil;
-    isAccurate: 1
-  - verse: Proverbs 3:5
-    text: Trust in the LORD with all your heart, and lean not on your own understanding;
-    isAccurate: 1
-  - verse: 1 Corinthians 13:4
-    text: Love suffers long and is kind; love does not envy; love does not parade
-      itself, is not puffed up;
-    isAccurate: 1
-  - verse: 1 Corinthians 13:13
-    text: And now abide faith, hope, love, thse three; but the greatest of these is
-      love.
-    isAccurate: 1
-  - verse: Phillipians 4:13
-    text: I can do all things through Christ who strengthens me.
-    isAccurate: 1
-  - verse: Marcus 2:20
-    text: The LORD is a lighthouse, leading the boats of our souls to the shore.
-    isAccurate: 0
-  - verse: Jessica 77:77
-    text: Then Jesus laid down and took a nap, for he was exhausted.
-    isAccurate: 0
-  - verse: Psalm 34:1
-    text: 'I will bless the LORD at all times: his praise shall continually be in
-      my mouth.'
-    isAccurate: 1
+  - {fileID: 11400000, guid: fdba201a90efcfa4796ada9020d43d51, type: 2}
+  - {fileID: 11400000, guid: 94439fcc6c0a0c24cb52d1c05700e8f9, type: 2}
+  - {fileID: 11400000, guid: cdbb0eba02d0f7d46af03f825939d5d7, type: 2}
+  - {fileID: 11400000, guid: df655c7b43464c249aa1ddfdd2dbb1a8, type: 2}
+  - {fileID: 11400000, guid: 3a3107cbb5f570e40a20eefff6d58023, type: 2}
+  - {fileID: 11400000, guid: 438c240c51a6d8f4581dc1061b2eb51a, type: 2}
+  - {fileID: 11400000, guid: fdb2ae87be4579e47ba5cce777daa547, type: 2}
+  - {fileID: 11400000, guid: d78dd0a5cb591d84c988b9744af50898, type: 2}
+  - {fileID: 11400000, guid: bad86b240c6d97541a46494debcdd003, type: 2}
+  - {fileID: 11400000, guid: 054c6b5116a927547a22084992cb736b, type: 2}
   mediumScriptures:
-  - verse: Xavier 2:99
-    text: The trees know not where their roots grow, only that water is recieved,
-      and in water life.
-    isAccurate: 0
+  - {fileID: 11400000, guid: 7748528350e20a846ba1c0899d72c2b4, type: 2}
+  - {fileID: 11400000, guid: a46e16a07f2f4844b96840733cfa3cb5, type: 2}
+  - {fileID: 11400000, guid: 275dbf6fbf13e024b825419a4093fa37, type: 2}
+  - {fileID: 11400000, guid: c6c75bb83c3c36448b4cbb87ffd7b332, type: 2}
+  - {fileID: 11400000, guid: c7d93c6a26833634c80322ce87543816, type: 2}
+  - {fileID: 11400000, guid: a6335508caaf0ba4787f4ee3ea833e8b, type: 2}
+  - {fileID: 11400000, guid: cd64e2244984e4e498ab00758f4ff439, type: 2}
+  - {fileID: 11400000, guid: 4cf52e98eb011b84b956f2f59bf3884d, type: 2}
+  - {fileID: 11400000, guid: a79652a1a1f7fbc44a845c20b1c7fde3, type: 2}
+  - {fileID: 11400000, guid: 27784f13336c05e4da3ef209bddd0541, type: 2}
+  - {fileID: 11400000, guid: 465ba3c3b95633243ae7186311c2ce4c, type: 2}
   hardScriptures:
-  - verse: Ecclesiastes 7:1
-    text: A good name is better than precious ointment, and the day of death than
-      the day of on's birth
-    isAccurate: 1
+  - {fileID: 0}
 --- !u!114 &505058421
 MonoBehaviour:
   m_ObjectHideFlags: 0
