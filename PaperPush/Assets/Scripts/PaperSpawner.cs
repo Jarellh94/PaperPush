@@ -26,7 +26,8 @@ public class PaperSpawner : MonoBehaviour {
     // Use this for initialization
     void Start () {
         scoreMan = gameObject.GetComponent<ScoreManager>();
-        difficulty = FindObjectOfType<DifficultySetting>().GetDifficulty();
+        if(FindObjectOfType<DifficultySetting>() != null)
+            difficulty = FindObjectOfType<DifficultySetting>().GetDifficulty();
         StartGame();
     }
 	

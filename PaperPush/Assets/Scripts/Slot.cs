@@ -8,13 +8,23 @@ public class Slot : MonoBehaviour {
     
     public SlotSide mySide;
 
+    public Transform particleSpawnPoint;
+
+    public GameObject correctParticles;
+    public GameObject wrongParticles;
+
+    GameObject particleHolder;
+
     PaperSpawner spawner;
     ScoreManager scoreMan;
+
+    GameManager gameMan;
 
 	// Use this for initialization
 	void Start () {
         spawner = FindObjectOfType<PaperSpawner>();
         scoreMan = FindObjectOfType<ScoreManager>();
+        gameMan = FindObjectOfType<GameManager>();
 	}
 	
 	// Update is called once per frame
@@ -28,14 +38,28 @@ public class Slot : MonoBehaviour {
         {
             if(other.gameObject.GetComponent<PaperInfo>().GetTarget() == mySide)
             {
-                scoreMan.AddScore(1);
-                spawner.NewPaper();
+                gameMan.CorrectSort();
+
+                if (mySide == SlotSide.LEFT)
+                    particleHolder = Instantiate(correctParticles, particleSpawnPoint.position, Quaternion.Euler(0, 90, 0));
+                else
+                    particleHolder = Instantiate(correctParticles, particleSpawnPoint.position, Quaternion.Euler(0, -90, 0));
+
+
+                Destroy(particleHolder, 1f);
             }
             else
             {
+                gameMan.WrongSort();
+                
                 Debug.Log("Mistake!");
-
-                spawner.EndGame();
+                if (mySide == SlotSide.LEFT)
+                    particleHolder = Instantiate(wrongParticles, particleSpawnPoint.position, Quaternion.Euler(0, 90, 0));
+                else
+                    particleHolder = Instantiate(wrongParticles, particleSpawnPoint.position, Quaternion.Euler(0, -90, 0));
+                
+                Destroy(particleHolder, 1f);
+                
             }
             
 
