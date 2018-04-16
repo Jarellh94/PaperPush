@@ -23,6 +23,11 @@ public class ScoreManager : MonoBehaviour {
         UpdateScore();
     }
 
+    public void AddTimedScore(int amt)
+    {
+        score += amt;
+    }
+
     public void UpdateScore()
     {
         scoreText.text = score.ToString();

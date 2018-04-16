@@ -422,6 +422,7 @@ GameObject:
   - component: {fileID: 114268864755070332}
   - component: {fileID: 114360102615396768}
   - component: {fileID: 114763975271721216}
+  - component: {fileID: 114334838107646360}
   m_Layer: 0
   m_Name: PlayerManager
   m_TagString: Untagged
@@ -914,7 +915,8 @@ MonoBehaviour:
   particleSpawnPoint: {fileID: 4164436523875436}
   correctParticles: {fileID: 1410597351444664, guid: 89eb0162d7847cd4ca2c1fc5d512e50e,
     type: 2}
-  wrongParticles: {fileID: 0}
+  wrongParticles: {fileID: 1732960985275652, guid: cdc21bd8d440f2e4ba917f0257c79a2a,
+    type: 2}
 --- !u!114 &114054962780802566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1226,7 +1228,8 @@ MonoBehaviour:
   particleSpawnPoint: {fileID: 4492110361062416}
   correctParticles: {fileID: 1410597351444664, guid: 89eb0162d7847cd4ca2c1fc5d512e50e,
     type: 2}
-  wrongParticles: {fileID: 0}
+  wrongParticles: {fileID: 1732960985275652, guid: cdc21bd8d440f2e4ba917f0257c79a2a,
+    type: 2}
 --- !u!114 &114261110998128052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1345,6 +1348,20 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114334838107646360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1879870984572808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a415a9032148ad40ade7bc4cbefccca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timedGame: 1
+  timeLimit: 30
+  timerText: {fileID: 114216971398418424}
 --- !u!114 &114349889007844944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1413,6 +1430,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 465ba3c3b95633243ae7186311c2ce4c, type: 2}
   hardScriptures:
   - {fileID: 0}
+  endPapers: []
 --- !u!114 &114385249096489560
 MonoBehaviour:
   m_ObjectHideFlags: 1

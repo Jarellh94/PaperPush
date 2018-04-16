@@ -16,6 +16,8 @@ public class PaperSpawner : MonoBehaviour {
 
     private List<Scripture> currentScriptures = new List<Scripture>();
 
+    public List<GameObject> endPapers = new List<GameObject>();
+
     private int difficulty = 1;
 
     private int curIter = 0;
@@ -81,6 +83,27 @@ public class PaperSpawner : MonoBehaviour {
 
         endGamePanel.SetActive(true);
         gamePanel.SetActive(false);
+    }
+
+    public void EndTimedGame()
+    {
+        endGamePanel.SetActive(true);
+        gamePanel.SetActive(false);
+    }
+
+    public void WrongCard()
+    {
+        GameObject endPaper = Instantiate(paperPrefab, paperSpawnPoint.position, Quaternion.identity) as GameObject;
+        endPaper.GetComponent<PaperInfo>().SetScripture(currentScriptures[curIter-1]);
+
+        endPaper.GetComponent<PaperMovement>().GameEnded();
+        endPaper.GetComponent<PaperInfo>().GameEnded();
+
+        endPaper.SetActive(false);
+
+        endPapers.Add(endPaper);
+        NewPaper();
+
     }
 
     private void ShuffleCards()
