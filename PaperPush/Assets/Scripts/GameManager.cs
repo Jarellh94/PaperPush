@@ -19,6 +19,12 @@ public class GameManager : MonoBehaviour {
     void Start () {
         spawner = GetComponent<PaperSpawner>();
         scoreMan = GetComponent<ScoreManager>();
+
+        if (FindObjectOfType<GameSettings>() != null)
+        {
+            spawner.difficulty = FindObjectOfType<GameSettings>().GetDifficulty();
+            timedGame = FindObjectOfType<GameSettings>().GetGameMode();
+        }
     }
 	
 	// Update is called once per frame

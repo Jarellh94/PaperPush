@@ -18,7 +18,7 @@ public class PaperSpawner : MonoBehaviour {
 
     public List<GameObject> endPapers = new List<GameObject>();
 
-    private int difficulty = 1;
+    public int difficulty = 1;
 
     private int curIter = 0;
 
@@ -28,8 +28,6 @@ public class PaperSpawner : MonoBehaviour {
     // Use this for initialization
     void Start () {
         scoreMan = gameObject.GetComponent<ScoreManager>();
-        if(FindObjectOfType<DifficultySetting>() != null)
-            difficulty = FindObjectOfType<DifficultySetting>().GetDifficulty();
         StartGame();
     }
 	

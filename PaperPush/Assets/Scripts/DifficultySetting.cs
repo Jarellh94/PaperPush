@@ -9,6 +9,7 @@ public class DifficultySetting : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
         Object.DontDestroyOnLoad(gameObject);
 	}
 	
