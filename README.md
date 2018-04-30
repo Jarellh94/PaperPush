@@ -1,4 +1,4 @@
-# PaperPush
+# Bibleswipe
 A unity3d mobile game where the player sorts scripture verses that may or may not be in the bible.
 
 Goal:
