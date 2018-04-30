@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 354411962dc768a45b1bfa062aaf5388, type: 3}
   m_Name: Matt53
   m_EditorClassIdentifier: 
-  verse: Bart 4:88
+  verse: Matthew 5:3
   text: Blessed are the poor in spirit, for theirs is the kingdom of heaven.
-  isAccurate: 0
+  isAccurate: 1

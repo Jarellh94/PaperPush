@@ -16,7 +16,8 @@ public class PaperSpawner : MonoBehaviour {
 
     private List<Scripture> currentScriptures = new List<Scripture>();
 
-    public List<GameObject> endPapers = new List<GameObject>();
+    //public List<GameObject> endPapers = new List<GameObject>();
+    public GameObject IncorrectVersesList;
 
     public int difficulty = 1;
 
@@ -47,7 +48,7 @@ public class PaperSpawner : MonoBehaviour {
 
         if (curIter < currentScriptures.Count)
         {
-            GameObject newPaper = Instantiate(paperPrefab, paperSpawnPoint.position, Quaternion.identity) as GameObject;
+            newPaper = Instantiate(paperPrefab, paperSpawnPoint.position, Quaternion.identity) as GameObject;
 
             newPaper.GetComponent<PaperInfo>().SetScripture(currentScriptures[curIter]);
 
@@ -64,11 +65,11 @@ public class PaperSpawner : MonoBehaviour {
     public void StartGame()
     {
         ShuffleCards();
-        NewPaper();
-        scoreMan.ResetScore();
-
         if (newPaper != null)
             Destroy(newPaper);
+        NewPaper();
+
+        //IncorrectVersesList.GetComponent<IncorrectVerses>().StartGame();
     }
 
     public void EndGame()
@@ -85,8 +86,12 @@ public class PaperSpawner : MonoBehaviour {
 
     public void EndTimedGame()
     {
+        if (newPaper != null)
+            Destroy(newPaper);
+
         endGamePanel.SetActive(true);
         gamePanel.SetActive(false);
+        IncorrectVersesList.SetActive(true);
     }
 
     public void WrongCard()
@@ -97,9 +102,10 @@ public class PaperSpawner : MonoBehaviour {
         endPaper.GetComponent<PaperMovement>().GameEnded();
         endPaper.GetComponent<PaperInfo>().GameEnded();
 
-        endPaper.SetActive(false);
+        //endPaper.SetActive(false);
 
-        endPapers.Add(endPaper);
+        //endPapers.Add(endPaper);
+        IncorrectVersesList.GetComponent<IncorrectVerses>().AddVerseObject(endPaper);
         NewPaper();
 
     }

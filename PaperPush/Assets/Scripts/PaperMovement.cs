@@ -53,5 +53,7 @@ public class PaperMovement : MonoBehaviour {
     public void GameEnded()
     {
         gameOver = true;
+        spawning = false;
+        moving = false;
     }
 }

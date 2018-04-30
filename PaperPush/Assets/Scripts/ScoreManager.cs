@@ -7,6 +7,7 @@ public class ScoreManager : MonoBehaviour {
 
     public Text scoreText;
     public Text endScoreText;
+    public Text labelText;
 
     int score = 0;
 
@@ -38,5 +39,11 @@ public class ScoreManager : MonoBehaviour {
     {
         score = 0;
         UpdateScore();
+    }
+
+    public void EndTimedGame()
+    {
+        UpdateScore();
+        labelText.text = "Incorrect Verses: ";
     }
 }

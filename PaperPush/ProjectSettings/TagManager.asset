@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Paper
   - Slot
+  - VerseList
   layers:
   - Default
   - TransparentFX

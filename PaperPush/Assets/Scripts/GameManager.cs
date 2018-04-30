@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -14,6 +15,8 @@ public class GameManager : MonoBehaviour {
     float timer = 0;
 
     public Text timerText;
+
+    public GameObject leftSlot, rightSlot;
 
     // Use this for initialization
     void Start () {
@@ -30,6 +33,7 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        //Timed games need to be different, because the game doesn't end when you make a mistake, and it should keep track of all cards sorted.
         if(timedGame)
         {
             timer += Time.deltaTime;
@@ -38,9 +42,24 @@ public class GameManager : MonoBehaviour {
             if (timer > timeLimit)
             {
                 spawner.EndTimedGame();
+                leftSlot.SetActive(false);
+                rightSlot.SetActive(false);
+                scoreMan.EndTimedGame();
             }
         }
 	}
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        /*
+        spawner.StartGame();
+
+        scoreMan.ResetScore();
+
+        leftSlot.SetActive(true);
+        rightSlot.SetActive(true);*/
+    }
 
     public void CorrectSort()
     {

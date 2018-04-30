@@ -242,7 +242,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0e58c63fe687bbc4c9353710a0adc12f, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 1
@@ -337,8 +337,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2032822026}
-        m_MethodName: SetTimedGame
+      - m_Target: {fileID: 358260922}
+        m_MethodName: SetGameMode
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -791,6 +791,7 @@ GameObject:
   - component: {fileID: 358260919}
   - component: {fileID: 358260921}
   - component: {fileID: 358260920}
+  - component: {fileID: 358260922}
   m_Layer: 5
   m_Name: GameModePanel
   m_TagString: Untagged
@@ -853,6 +854,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 358260918}
+--- !u!114 &358260922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 358260918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc6d637ff3049e42984f632ac7160ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &446363927
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,8 +941,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2032822026}
-        m_MethodName: SetTimedGame
+      - m_Target: {fileID: 358260922}
+        m_MethodName: SetGameMode
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1183,7 +1195,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0e58c63fe687bbc4c9353710a0adc12f, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 1
@@ -1354,7 +1366,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 827725025}
         m_MethodName: SetDifficulty
         m_Mode: 3
         m_Arguments:
@@ -1378,6 +1390,7 @@ GameObject:
   - component: {fileID: 827725022}
   - component: {fileID: 827725024}
   - component: {fileID: 827725023}
+  - component: {fileID: 827725025}
   m_Layer: 5
   m_Name: OptionsPanel
   m_TagString: Untagged
@@ -1444,6 +1457,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 827725021}
+--- !u!114 &827725025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 827725021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc6d637ff3049e42984f632ac7160ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &860068384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2269,7 +2293,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b55d43c0772e0f94883400546a522799, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -2936,7 +2960,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 827725025}
         m_MethodName: SetDifficulty
         m_Mode: 3
         m_Arguments:
@@ -3029,7 +3053,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 827725025}
         m_MethodName: SetDifficulty
         m_Mode: 3
         m_Arguments:
