@@ -22,11 +22,11 @@ public class IncorrectVerses : MonoBehaviour {
     public void AddVerseObject(GameObject verseObject)
     {
         verseObject.transform.SetParent(transform);
-        verseObject.transform.position = new Vector3((numObjects * 5.5f), 0, 3);
+        verseObject.transform.position = new Vector3((numObjects * 6.5f), 0, 3);
 
 
-        myHandle.transform.localScale += new Vector3(6f, 0);
-        myHandle.transform.Translate(new Vector3(3f, 0));
+        myHandle.transform.localScale += new Vector3(7f, 0);
+        myHandle.transform.Translate(new Vector3(2.5f, 0));
 
         numObjects++;
     }

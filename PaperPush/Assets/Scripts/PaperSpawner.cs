@@ -67,6 +67,7 @@ public class PaperSpawner : MonoBehaviour {
         ShuffleCards();
         if (newPaper != null)
             Destroy(newPaper);
+
         NewPaper();
 
         //IncorrectVersesList.GetComponent<IncorrectVerses>().StartGame();

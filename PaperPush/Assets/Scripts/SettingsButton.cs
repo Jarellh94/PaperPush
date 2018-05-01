@@ -25,4 +25,9 @@ public class SettingsButton : MonoBehaviour {
     {
         settings.SetDifficulty(value);
     }
+
+    public void ToggleVolume()
+    {
+        settings.ToggleVolume();
+    }
 }

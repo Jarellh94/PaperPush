@@ -6,6 +6,7 @@ public class GameSettings : MonoBehaviour {
 
     public int difficulty = 2;
     public bool timedGame = false;
+    public float volume = 100f;
 
     private static GameSettings gameSettings;
 
@@ -42,5 +43,13 @@ public class GameSettings : MonoBehaviour {
     public bool GetGameMode()
     {
         return timedGame;
+    }
+
+    public void ToggleVolume()
+    {
+        if (volume > 0)
+            volume = 0;
+        if (volume == 0)
+            volume = 100;
     }
 }
