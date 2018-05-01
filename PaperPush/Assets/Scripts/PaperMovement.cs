@@ -12,22 +12,25 @@ public class PaperMovement : MonoBehaviour {
     int moveDir = 0;
     bool gameOver = false;
 
+    Animator anim;
+
 	// Use this for initialization
 	void Start () {
-		
-	}
+        anim = GetComponent<Animator>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
         if (spawning)
         {
-            transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
+            //transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
             if (transform.position.z <= stopPoint)
                 Stop();
         }
 		else if(moving && !gameOver)
         {
-            transform.Translate(Vector3.right * moveDir * moveSpeed * Time.deltaTime);
+            //transform.Translate(Vector3.right * moveDir * moveSpeed * Time.deltaTime);
         }
 	}
 
@@ -40,14 +43,16 @@ public class PaperMovement : MonoBehaviour {
 
     public void MoveLeft()
     {
+        anim.SetTrigger("Left");
         moving = true;
-        moveDir = -1;
+        //moveDir = -1;
     }
 
     public void MoveRight()
     {
+        anim.SetTrigger("Right");
         moving = true;
-        moveDir = 1;
+        //moveDir = 1;
     }
 
     public void GameEnded()
