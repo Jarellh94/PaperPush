@@ -21,6 +21,7 @@ public class IncorrectVerses : MonoBehaviour {
 
     public void AddVerseObject(GameObject verseObject)
     {
+        Destroy(verseObject.GetComponent<Animator>());
         verseObject.transform.SetParent(transform);
         verseObject.transform.position = new Vector3((numObjects * 6.5f), 0, 3);
 

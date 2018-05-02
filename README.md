@@ -45,9 +45,9 @@ GameOverGui
 - [x] Add a main menu
 - [x] Add a lose menu that allows the player to flip through the cards. (Kind of. Currently it's go until you lose.)
 - [x] Create a mode where you play a timed session and it keeps track of what you got wrong.
-- [ ] Add animations to the cards so that they flip over when you swipe
+- [x] Add animations to the cards so that they flip over when you swipe
 - [ ] Add sounds to the game.
 - [ ] Add music to the game.
 - [ ] Place 100 verses(with good distribution of real and fake) in each difficulty level
-- [ ] Make the UI more appealing(Ex. Make the buttons more rounded)
+- [x] Make the UI more appealing(Ex. Make the buttons more rounded)
 - [ ] Add animations to UI

@@ -13,6 +13,9 @@ public class Slot : MonoBehaviour {
     public GameObject correctParticles;
     public GameObject wrongParticles;
 
+    public AudioSource correctSound;
+    public AudioSource wrongSound;
+
     GameObject particleHolder;
 
     PaperSpawner spawner;
@@ -40,6 +43,8 @@ public class Slot : MonoBehaviour {
             {
                 gameMan.CorrectSort();
 
+                correctSound.Play();
+
                 if (mySide == SlotSide.LEFT)
                     particleHolder = Instantiate(correctParticles, particleSpawnPoint.position, Quaternion.Euler(0, 90, 0));
                 else
@@ -53,6 +58,8 @@ public class Slot : MonoBehaviour {
                 gameMan.WrongSort();
                 
                 Debug.Log("Mistake!");
+                wrongSound.Play();
+
                 if (mySide == SlotSide.LEFT)
                     particleHolder = Instantiate(wrongParticles, particleSpawnPoint.position, Quaternion.Euler(0, 90, 0));
                 else
