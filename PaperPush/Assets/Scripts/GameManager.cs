@@ -73,12 +73,15 @@ public class GameManager : MonoBehaviour {
 
     public void WrongSort()
     {
-        if(timedGame)
+        if (timedGame)
         {
             spawner.WrongCard();
         }
 
         else
+        {
             spawner.EndGame();
+            scoreMan.EndSurvGame();
+        }
     }
 }

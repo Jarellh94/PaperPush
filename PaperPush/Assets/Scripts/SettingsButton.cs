@@ -26,8 +26,13 @@ public class SettingsButton : MonoBehaviour {
         settings.SetDifficulty(value);
     }
 
-    public void ToggleVolume()
+    public void ResetScores()
     {
-        settings.ToggleVolume();
+        settings.ResetHighScores();
+    }
+
+    public void SetHighScore(int value)
+    {
+        settings.SetHighScore(value);
     }
 }

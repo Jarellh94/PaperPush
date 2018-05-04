@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour {
     public Text scoreText;
     public Text endScoreText;
     public Text labelText;
+    public HighScores highScore;
 
     int score = 0;
 
@@ -41,9 +42,16 @@ public class ScoreManager : MonoBehaviour {
         UpdateScore();
     }
 
+    public void EndSurvGame()
+    {
+        UpdateScore();
+        highScore.SetHighScore(score);
+    }
+
     public void EndTimedGame()
     {
         UpdateScore();
         labelText.text = "Incorrect Verses: ";
+        highScore.SetHighScore(score);
     }
 }
