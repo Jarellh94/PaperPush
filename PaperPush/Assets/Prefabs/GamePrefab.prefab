@@ -1261,10 +1261,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 49ffde9b50e9944489ca913d721dbd8b, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.341
-  m_Pitch: 1
+  m_audioClip: {fileID: 8300000, guid: 968ba1ec2949bae4b8fdede7fb3d1722, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.4
+  m_Pitch: 0.76
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -2211,28 +2211,83 @@ MonoBehaviour:
   easyScriptures:
   - {fileID: 11400000, guid: fdba201a90efcfa4796ada9020d43d51, type: 2}
   - {fileID: 11400000, guid: 94439fcc6c0a0c24cb52d1c05700e8f9, type: 2}
+  - {fileID: 11400000, guid: 44393ad787e136e4fbf387ff60158e2d, type: 2}
+  - {fileID: 11400000, guid: 8376e26b37745e745b56c1cce17ce0e5, type: 2}
+  - {fileID: 11400000, guid: 377c9a5ffb264744b99c36f72a92fac7, type: 2}
+  - {fileID: 11400000, guid: 1566c5b725d95724897c48e391c335f2, type: 2}
   - {fileID: 11400000, guid: cdbb0eba02d0f7d46af03f825939d5d7, type: 2}
   - {fileID: 11400000, guid: df655c7b43464c249aa1ddfdd2dbb1a8, type: 2}
+  - {fileID: 11400000, guid: 3694a9d3bbf9530439fa6c6d46a743c9, type: 2}
+  - {fileID: 11400000, guid: eb5ec7f073bfa1c43955fdf7b690abde, type: 2}
   - {fileID: 11400000, guid: 3a3107cbb5f570e40a20eefff6d58023, type: 2}
+  - {fileID: 11400000, guid: db264a17ff14d0345b09ed1e28b1302a, type: 2}
   - {fileID: 11400000, guid: 438c240c51a6d8f4581dc1061b2eb51a, type: 2}
+  - {fileID: 11400000, guid: 40b80f2affae91a4ca85a5a790c74bbb, type: 2}
+  - {fileID: 11400000, guid: b7857a6d4a538194882e02898a8961e4, type: 2}
   - {fileID: 11400000, guid: fdb2ae87be4579e47ba5cce777daa547, type: 2}
+  - {fileID: 11400000, guid: c1421990eef777b40961221d77afe985, type: 2}
+  - {fileID: 11400000, guid: 013b3493b5ec5dc47a585ba2dc75d455, type: 2}
   - {fileID: 11400000, guid: d78dd0a5cb591d84c988b9744af50898, type: 2}
+  - {fileID: 11400000, guid: 241273b2af3f49846aa57fc18a98c083, type: 2}
   - {fileID: 11400000, guid: bad86b240c6d97541a46494debcdd003, type: 2}
   - {fileID: 11400000, guid: 054c6b5116a927547a22084992cb736b, type: 2}
+  - {fileID: 11400000, guid: d38155bcf36a3594fbe310ae65b6d1c1, type: 2}
+  - {fileID: 11400000, guid: 36068787324ff3a459c5141998d6aefb, type: 2}
   mediumScriptures:
+  - {fileID: 11400000, guid: 010484439199a1b4bb6bc661f2b14411, type: 2}
+  - {fileID: 11400000, guid: 8f8ddd38c8dd6584ca1879542a94c61f, type: 2}
   - {fileID: 11400000, guid: 7748528350e20a846ba1c0899d72c2b4, type: 2}
+  - {fileID: 11400000, guid: 63dcea1d73ca8b843a00f1dee8c490bb, type: 2}
   - {fileID: 11400000, guid: a46e16a07f2f4844b96840733cfa3cb5, type: 2}
+  - {fileID: 11400000, guid: 4a247c4a54e6ce647a4d73e285516be6, type: 2}
+  - {fileID: 11400000, guid: 3e1322248e22b6f4e898a520c931f028, type: 2}
+  - {fileID: 11400000, guid: fdc6433286072a54eb3fc08207e6899f, type: 2}
+  - {fileID: 11400000, guid: 9d7a35791f767f1448482e758961b71a, type: 2}
   - {fileID: 11400000, guid: 275dbf6fbf13e024b825419a4093fa37, type: 2}
+  - {fileID: 11400000, guid: 0391a63077901684397bac241f2bea95, type: 2}
   - {fileID: 11400000, guid: c6c75bb83c3c36448b4cbb87ffd7b332, type: 2}
+  - {fileID: 11400000, guid: e2bf3ab2fd59a054fba23443e666a747, type: 2}
   - {fileID: 11400000, guid: c7d93c6a26833634c80322ce87543816, type: 2}
+  - {fileID: 11400000, guid: b23bbf3958f6658418d3ae49616c1850, type: 2}
+  - {fileID: 11400000, guid: 0ff745d3be17b7643a428fb6e84902b5, type: 2}
+  - {fileID: 11400000, guid: 4d27c91d92a57f048a053bac8a6e5523, type: 2}
+  - {fileID: 11400000, guid: c517e6b454abcec4fa12460cb778ab20, type: 2}
+  - {fileID: 11400000, guid: 3266ea0b2166612479031915272c12bb, type: 2}
+  - {fileID: 11400000, guid: 6de99d7da456afc40a6dfbb33e58aef3, type: 2}
+  - {fileID: 11400000, guid: 1d22967570abae54aaf40edfa014856e, type: 2}
+  - {fileID: 11400000, guid: 21167bff876c23e4c9992890083077e4, type: 2}
   - {fileID: 11400000, guid: a6335508caaf0ba4787f4ee3ea833e8b, type: 2}
+  - {fileID: 11400000, guid: d3e7d61a7c95fa348b9bd521cf2f9124, type: 2}
+  - {fileID: 11400000, guid: f011a5b8906aa45408b9026206514d67, type: 2}
   - {fileID: 11400000, guid: cd64e2244984e4e498ab00758f4ff439, type: 2}
   - {fileID: 11400000, guid: 4cf52e98eb011b84b956f2f59bf3884d, type: 2}
   - {fileID: 11400000, guid: a79652a1a1f7fbc44a845c20b1c7fde3, type: 2}
+  - {fileID: 11400000, guid: 674fdc3fc2f7923499a6491387cfc734, type: 2}
+  - {fileID: 11400000, guid: b2f57a7224d8f6244b0c999526db5314, type: 2}
+  - {fileID: 11400000, guid: bddb7c8e66663f84aa593bce6c968a23, type: 2}
   - {fileID: 11400000, guid: 27784f13336c05e4da3ef209bddd0541, type: 2}
   - {fileID: 11400000, guid: 465ba3c3b95633243ae7186311c2ce4c, type: 2}
+  - {fileID: 11400000, guid: 227053c17cbfa4e48bfb4302a0e5fb60, type: 2}
+  - {fileID: 11400000, guid: ee1beb60d38e9e3469bb772a6a5bcc91, type: 2}
+  - {fileID: 11400000, guid: eab614b778932084f96b8d6356ddf124, type: 2}
   hardScriptures:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: a14c9fde40f53e048be65de7ea56438c, type: 2}
+  - {fileID: 11400000, guid: 1b5dc96c9578fd64c93783cf6e3e85a4, type: 2}
+  - {fileID: 11400000, guid: d19e331703b40544f9f69349ca7aa746, type: 2}
+  - {fileID: 11400000, guid: 47aafaef5563c0347b32c260fc9ed0a4, type: 2}
+  - {fileID: 11400000, guid: 7afcf03c1ac165c458eb19a53fc23522, type: 2}
+  - {fileID: 11400000, guid: 380632b17246e2e4da4a9ab8bd9dc744, type: 2}
+  - {fileID: 11400000, guid: 186c945cecc7b6d4caa9166053916a0e, type: 2}
+  - {fileID: 11400000, guid: d4fa59234241c7549a72125c3ba6a0b8, type: 2}
+  - {fileID: 11400000, guid: 15ca058d57dddce429bdcfab187011be, type: 2}
+  - {fileID: 11400000, guid: f1484521384ea054897b6cb972f46560, type: 2}
+  - {fileID: 11400000, guid: 4bda32567c2d3cc43b8db1353ee9c8a2, type: 2}
+  - {fileID: 11400000, guid: ad047c93a3b09a94d9a851a47df5b2c5, type: 2}
+  - {fileID: 11400000, guid: fce36c7d7263526498a48feb75b80509, type: 2}
+  - {fileID: 11400000, guid: 8a36ca00baaf01f4594f6b8e958a5d76, type: 2}
+  - {fileID: 11400000, guid: 88f49642c68fb8e41b484c907827032f, type: 2}
+  - {fileID: 11400000, guid: 6ead42d665f16d149a3bc6aa9e581814, type: 2}
+  - {fileID: 11400000, guid: a0fcdaef72c6b454dabad784f980cdd0, type: 2}
   IncorrectVersesList: {fileID: 1299052473811036}
   difficulty: 1
 --- !u!114 &114385249096489560

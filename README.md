@@ -52,5 +52,5 @@ GameOverGui
 - [x] Make the UI more appealing(Ex. Make the buttons more rounded)
 - [x] Add animations to UI
 Bugs:
-- [ ] Bug where the high score updates whether new score is higher or not
-- [ ] Rare bug where cards won't propery update on Timed Hard mode and show sample text.
+- [x] Bug where the high score updates whether new score is higher or not
+- [x] Rare bug where cards won't propery update on Timed Hard mode and show sample text.

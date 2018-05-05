@@ -41,20 +41,19 @@ public class HighScores : MonoBehaviour {
 
         scoreText.text = "High Score: " + score.ToString();
     }
-    /*
-    public void GetHighScoreValue(bool isTimedScore)
-    {
-        int score = settings.GetHighScore(isTimedScore);
-
-        scoreText.text = "High Score: " + score.ToString();
-    }*/
 
     public void SetHighScore(int score)
     {
-        Debug.Log("Setting High Score to " + score);
         settings = FindObjectOfType<GameSettings>();
 
-        settings.SetHighScore(score);
-        GetHighScoreValue();
+        int oldScore = settings.GetHighScore();
+
+        if(oldScore < score)
+        {
+            Debug.Log("Setting High Score to " + score);
+            settings.SetHighScore(score);
+            GetHighScoreValue();
+        }
+        
     }
 }
