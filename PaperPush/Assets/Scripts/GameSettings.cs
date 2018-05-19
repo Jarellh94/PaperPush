@@ -85,6 +85,8 @@ public class GameSettings : MonoBehaviour {
                     PlayerPrefs.SetInt("TimeEasy", value);
                 break;
         }
+
+        PlayerPrefs.Save();
     }
 
     public void ResetHighScores()
