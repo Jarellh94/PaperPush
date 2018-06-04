@@ -50,7 +50,6 @@ public class HighScores : MonoBehaviour {
 
         if(oldScore < score)
         {
-            Debug.Log("Setting High Score to " + score);
             settings.SetHighScore(score);
             GetHighScoreValue();
         }

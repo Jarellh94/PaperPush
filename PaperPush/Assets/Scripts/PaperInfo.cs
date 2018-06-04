@@ -19,21 +19,6 @@ public class PaperInfo : MonoBehaviour {
     {
         rightStamp.SetActive(false);
         leftStamp.SetActive(false);
-        /*
-        int ran = Random.Range(1, 3);
-
-        target = ran == 1 ? SlotSide.LEFT : SlotSide.RIGHT;
-
-        if(target == SlotSide.RIGHT)
-        {
-            rightStamp.SetActive(true);
-            leftStamp.SetActive(false);
-        }
-        else
-        {
-            rightStamp.SetActive(false);
-            leftStamp.SetActive(true);
-        }*/
     }
     
     public void SetScripture(Scripture mine)

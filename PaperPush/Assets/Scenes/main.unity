@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 20c81548ae5dcef4e9002d3174ed06c0,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -197,31 +198,6 @@ Prefab:
     - target: {fileID: 4528157063155776, guid: 751de9eece3540a4f8af5ad0df52def2, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 224853315354579056, guid: 751de9eece3540a4f8af5ad0df52def2,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224342175470318158, guid: 751de9eece3540a4f8af5ad0df52def2,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224749108297575590, guid: 751de9eece3540a4f8af5ad0df52def2,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.22000122
-      objectReference: {fileID: 0}
-    - target: {fileID: 224060975665255146, guid: 751de9eece3540a4f8af5ad0df52def2,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.22999573
-      objectReference: {fileID: 0}
-    - target: {fileID: 224349991475467072, guid: 751de9eece3540a4f8af5ad0df52def2,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 751de9eece3540a4f8af5ad0df52def2, type: 2}

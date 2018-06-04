@@ -56,8 +56,7 @@ public class Slot : MonoBehaviour {
             else
             {
                 gameMan.WrongSort();
-                
-                Debug.Log("Mistake!");
+
                 wrongSound.Play();
 
                 if (mySide == SlotSide.LEFT)

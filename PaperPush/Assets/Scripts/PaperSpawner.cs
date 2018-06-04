@@ -39,13 +39,6 @@ public class PaperSpawner : MonoBehaviour {
 
     public void NewPaper()
     {
-        /*
-        GameObject newPaper = Instantiate(paperPrefab, paperSpawnPoint.position, Quaternion.identity) as GameObject;
-
-        int ran = Random.Range(0, currentScriptures.Count);
-
-        newPaper.GetComponent<PaperInfo>().SetScripture(currentScriptures[ran]);*/
-
         if (curIter < currentScriptures.Count)
         {
             newPaper = Instantiate(paperPrefab, paperSpawnPoint.position, Quaternion.identity) as GameObject;
@@ -69,14 +62,14 @@ public class PaperSpawner : MonoBehaviour {
             Destroy(newPaper);
 
         NewPaper();
-
-        //IncorrectVersesList.GetComponent<IncorrectVerses>().StartGame();
     }
 
     public void EndGame()
     {
         newPaper = Instantiate(paperPrefab, paperSpawnPoint.position, Quaternion.identity) as GameObject;
         newPaper.GetComponent<PaperInfo>().SetScripture(currentScriptures[--curIter]);
+
+        newPaper.GetComponent<BoxCollider>().enabled = false;
 
         newPaper.GetComponent<PaperMovement>().GameEnded();
         newPaper.GetComponent<PaperInfo>().GameEnded();
@@ -119,11 +112,13 @@ public class PaperSpawner : MonoBehaviour {
                 currentScriptures.AddRange(easyScriptures);
                 break;
             case 2:
+                currentScriptures.AddRange(easyScriptures);
                 currentScriptures.AddRange(mediumScriptures);
-                goto case 1;
+                break;
             case 3:
+                currentScriptures.AddRange(mediumScriptures);
                 currentScriptures.AddRange(hardScriptures);
-                goto case 2;
+                break;
         }
 
         for(int i = 0; i < currentScriptures.Count-1; i++)
@@ -138,12 +133,3 @@ public class PaperSpawner : MonoBehaviour {
         }
     }
 }
-/*
-[System.Serializable]
-public class Scripture
-{
-    public string verse;
-    public string text;
-
-    public bool isAccurate;
-}*/

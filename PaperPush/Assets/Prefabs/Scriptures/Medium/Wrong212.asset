@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 354411962dc768a45b1bfa062aaf5388, type: 3}
+  m_Name: Wrong212
+  m_EditorClassIdentifier: 
+  verse: Wrongs 2:12
+  text: The next morning, Elisha said to Elijah, "I will go away to a place where
+    you will not find me. You cannot come with me, but must remain here."
+  isAccurate: 0

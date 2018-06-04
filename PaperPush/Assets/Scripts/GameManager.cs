@@ -52,13 +52,6 @@ public class GameManager : MonoBehaviour {
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        /*
-        spawner.StartGame();
-
-        scoreMan.ResetScore();
-
-        leftSlot.SetActive(true);
-        rightSlot.SetActive(true);*/
     }
 
     public void CorrectSort()

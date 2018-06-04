@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 354411962dc768a45b1bfa062aaf5388, type: 3}
-  m_Name: prov35
+  m_Name: Prov35
   m_EditorClassIdentifier: 
   verse: Proverbs 3:5
   text: Trust in the LORD with all your heart, and lean not on your own understanding;
