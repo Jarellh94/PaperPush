@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour {
 
     public GameObject leftSlot, rightSlot;
 
+    bool gameOver = false;
+
     // Use this for initialization
     void Start () {
         spawner = GetComponent<PaperSpawner>();
@@ -33,18 +35,22 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        //Timed games need to be different, because the game doesn't end when you make a mistake, and it should keep track of all cards sorted.
-        if(timedGame)
+        if (!gameOver)
         {
-            timer += Time.deltaTime;
-            timerText.text = (timeLimit - (int)timer).ToString();
-
-            if (timer > timeLimit)
+            //Timed games need to be different, because the game doesn't end when you make a mistake, and it should keep track of all cards sorted.
+            if (timedGame)
             {
-                spawner.EndTimedGame();
-                leftSlot.SetActive(false);
-                rightSlot.SetActive(false);
-                scoreMan.EndTimedGame();
+                timer += Time.deltaTime;
+                timerText.text = (timeLimit - (int)timer).ToString();
+
+                if (timer > timeLimit)
+                {
+                    spawner.EndTimedGame();
+                    leftSlot.SetActive(false);
+                    rightSlot.SetActive(false);
+                    scoreMan.EndTimedGame();
+                    gameOver = true;
+                }
             }
         }
 	}
@@ -52,6 +58,7 @@ public class GameManager : MonoBehaviour {
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        gameOver = false;
     }
 
     public void CorrectSort()

@@ -7143,7 +7143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25f3d5f2eabd06949b534f66a09d1c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  difficulty: 2
+  difficulty: 1
   timedGame: 0
 --- !u!4 &2032822027
 Transform:

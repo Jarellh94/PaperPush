@@ -9,6 +9,7 @@ public class HighScores : MonoBehaviour {
     bool settingsMode = false;
 
     public Text scoreText;
+    public GameObject newScore;
 
     GameSettings settings;
 
@@ -18,7 +19,7 @@ public class HighScores : MonoBehaviour {
 
         settingsMode = settings.GetGameMode();
 
-        GetMyHighScoreValue();
+        //GetMyHighScoreValue();
     }
 	
 	// Update is called once per frame
@@ -47,12 +48,16 @@ public class HighScores : MonoBehaviour {
         settings = FindObjectOfType<GameSettings>();
 
         int oldScore = settings.GetHighScore();
-
         if(oldScore < score)
         {
             settings.SetHighScore(score);
+            PlayerPrefs.Save();
             GetHighScoreValue();
+            newScore.SetActive(true);
         }
-        
+        else
+            scoreText.text = "High Score: " + oldScore.ToString();
+
+
     }
 }

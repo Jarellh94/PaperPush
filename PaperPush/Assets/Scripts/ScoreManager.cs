@@ -8,14 +8,15 @@ public class ScoreManager : MonoBehaviour {
     public Text scoreText;
     public Text endScoreText;
     public Text labelText;
+    public Text gameHighScore;
     public HighScores highScore;
 
     int score = 0;
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        gameHighScore.text = "High Score: " + FindObjectOfType<GameSettings>().GetHighScore().ToString();
+    }
 	
 	// Update is called once per frame
 
@@ -45,6 +46,7 @@ public class ScoreManager : MonoBehaviour {
     public void EndSurvGame()
     {
         UpdateScore();
+        labelText.text = "Incorrect Verse: ";
         highScore.SetHighScore(score);
     }
 

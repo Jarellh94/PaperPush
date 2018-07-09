@@ -9,6 +9,9 @@ public class SettingsButton : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         settings = FindObjectOfType<GameSettings>();
+
+        if (settings == null)
+            Debug.Log("Not Found");
 	}
 	
 	// Update is called once per frame
